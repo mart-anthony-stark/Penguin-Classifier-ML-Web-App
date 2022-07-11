@@ -44,7 +44,6 @@ else:
 penguins_raw = pd.read_csv('penguins_cleaned.csv')
 penguins = penguins_raw.drop(columns=['species'])
 df = pd.concat([input_df, penguins], axis=0)
-print(df)
 
 # Encoding of ordinal features
 encode = ['sex', 'island']
